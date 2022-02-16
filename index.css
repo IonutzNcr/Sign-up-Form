@@ -3,10 +3,11 @@
 *{
 margin:0;
 padding:0;
+font-size: 20px;
+box-sizing: border-box;
 }
 
 
-/* Font family for the logo "Russo One" */
 
 .bigContainer{
     display:flex;
@@ -40,6 +41,10 @@ form{
 }
 
 .form{
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    padding-top: 1rem;
     width:100%;
     height:calc(100%/3);
     background-color: rgb(179, 106, 106);
@@ -58,7 +63,7 @@ form{
     gap:0.5rem;
     background-color: rgba(17, 16, 16, 0.5);
     font-family:"Russo One",Verdana, Geneva, Tahoma, sans-serif ;
-    font-size: 3rem;
+    
     color: rgb(172, 52, 52);
     position:absolute;
     top:32%;
@@ -66,7 +71,42 @@ form{
     text-align: center;
 }
 
+.logo h2{
+    font-size: 2.5rem;
+}
 .logo img{
     height:5rem;
     width:auto;
+}
+
+.message{
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+    gap:1rem;
+    padding-bottom: 2rem;
+    background-color: rgb(230, 230, 230);
+}
+
+fieldset{
+    width:40%; /* this prevent the the input to use all the widht  */
+    border:none; /* this will remove the akward border */
+    display:flex;
+    flex-direction: column;
+    gap:0.2rem;
+}
+
+.field{
+    display:flex;
+    gap:4rem;
+    
+}
+
+.focus:focus{
+    border-color: cyan;
+    box-shadow: 5px 5px 2px 2px rgb(63, 48, 48);
+}
+
+.error:focus{
+    border-color: red;
 }
