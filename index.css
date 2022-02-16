@@ -17,7 +17,9 @@ padding:0;
 .firstContainer{
     width:35%;
     height:100%;
-    background-color: blueviolet;
+    background: no-repeat url(randy-tarampi-U2eUlPEKIgU-unsplash\(1\).jpg);
+    background-size:100% 100%;
+    position:relative;
 }
 
 .secondContainer{
@@ -47,4 +49,19 @@ form{
     width:100%;
     height:calc(100%/3);
     background-color: rgb(63, 48, 48);
+}
+
+.logo{
+    
+    background-color: rgba(17, 16, 16, 0.5);
+    font-family:"Russo One",Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 3rem;
+    color: rgb(172, 52, 52);
+    position:absolute;
+    top:35%;
+    width: 100%;
+    text-align: center;
+}
+logo::before{
+    content:"muhaha";
 }
