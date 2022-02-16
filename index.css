@@ -52,16 +52,21 @@ form{
 }
 
 .logo{
-    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
     background-color: rgba(17, 16, 16, 0.5);
     font-family:"Russo One",Verdana, Geneva, Tahoma, sans-serif ;
     font-size: 3rem;
     color: rgb(172, 52, 52);
     position:absolute;
-    top:35%;
+    top:32%;
     width: 100%;
     text-align: center;
 }
-logo::before{
-    content:"muhaha";
+
+.logo img{
+    height:5rem;
+    width:auto;
 }
