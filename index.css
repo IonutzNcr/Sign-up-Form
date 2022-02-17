@@ -45,7 +45,7 @@ time, mark, audio, video {
 .secondContainer{
     width: 65%;
     height:100%;
-    background-color: rgb(175, 135, 212);
+    background-color: rgb(199, 191, 206);
 }
 
 form{
@@ -66,7 +66,8 @@ form{
     padding-top: 1rem;
     width:100%;
     height:calc(100%/3);
-    background-color: rgb(179, 106, 106);
+    
+    
 }
 
 .action{
@@ -104,7 +105,7 @@ form{
     justify-content: end;
     gap:1rem;
     padding-bottom: 2rem;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(255, 255, 255);
 }
 
 fieldset{
@@ -129,3 +130,47 @@ fieldset{
 .error:focus{
     border-color: red;
 }
+
+a{
+    list-style-image: none;
+}
+
+/* remove anchor style */
+a:link {
+    text-decoration: none;
+    color: inherit;
+    
+} 
+
+a:visited {
+    text-decoration:none;
+    color: inherit;   
+}
+
+a[href]{
+    color:green;
+}
+
+.action{
+    display:flex;
+    flex-direction:column;
+    gap:0.5rem;
+    padding-top:2.5rem;
+    background-color: white;
+ }
+
+ .action button{
+     width:20%;
+     stroke: none;
+     border: 1px solid green ;
+     background-color: green;
+     border-radius: 30px;
+     flex-grow:0;
+     flex-shrink:0;
+ }
+
+ /* add padding to all elements inside the second container */
+
+ .field, .message, .action, h3 {
+     padding-left:2.5rem;
+ }
