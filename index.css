@@ -69,6 +69,7 @@ input{
     width: 65%;
     height:100%;
     background-color: var(--main-color);
+    overflow: scroll;
 }
 
 form{
@@ -89,16 +90,13 @@ form{
     padding-top: 1rem;
     padding-bottom:1rem;
     width:100%;
-    /* height:calc(100%/3); */
     background-color: var(--second-color);
     
     
 }
 
 .action{
-    width:100%;
-    /* height:calc(100%/3); */
-   
+    width:100%; 
 }
 
 .logo{
@@ -110,8 +108,8 @@ form{
     font-family:var(--second-font);
     
     color: rgb(172, 52, 52);
-    position:absolute;
-    top:32%;
+    position:relative;
+    top:25%;
     width: 100%;
     text-align: center;
 }
